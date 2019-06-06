@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title></title>
+</head>
+<body>
+
+</body>
+<div class="container okayok">
+  <img src="door.png" style="height: 350px;" class="Door1">  
+  <img src="door2.png" style="height: 350px;" class="ml-5 Door2">  
+  <img src="door3.png" style="height: 350px;" class="ml-5 Door3"> 
+ </div>
+  
+ <div class="location1"> 	
+ 	<div style="background-image:url(bg.jpg); height: 800px; background-size: 100% 100%; display: none;" class="hogwarts">  
+ 	  <div> 
+ 		<h3 class="text-white">Помоги Гарри найти его вещи</h3> 
+ 		<button type="button" class="btn btn-success Vihod">Выйти</button> 
+ 		<img src="gun.png" style="height: 100px; margin-left: 150px; margin-top: 470px; position: absolute; " class="Ak"> 
+ 		<img src="mantiya.png" style="height: 50px; margin-left: 950px; margin-top: 510px; position: absolute;" class="Mantiya"> 
+ 		<img src="metla.png" style="height: 100px; margin-left: 700px; position: absolute;" class="Metla"> 
+ 		<img src="palochka.png" style="height: 150px; left: 50%; bottom: 0%; position: absolute;" class="Palochka"> 
+ 		<img src="ring.png" style="height: 50px; left: 10%; bottom: 30%; position: absolute;" class="ring"> 
+ 		 <h3 class="text-white scores">0</h3>   
+
+ 	  </div>
+
+
+ 	</div>
+ </div>
+<div class="location2">  
+	<div style="background-image: url(Leha.jpg); height: 800px; background-size: 100% 100%; display: none;" class="summer">   
+
+		<h3 class="text-white">Помоги Двачемну найти его снаряжение!!</h3>  
+		<button type="button" class="btn btn-success Exit">Я передумал</button> 
+		<img src="YaDebil.png" style="height: 100px; margin-left: 950px; margin-top: 420px;">
+
+
+
+
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript"> 
+
+
+	
+ 	 let scores =0; 
+	 
+
+ 	
+
+
+
+
+	    document.querySelector(".Door1").onclick = function(){
+	    alert("Cool hogwarts");
+	    document.querySelector(".okayok").style.display='none';   
+	    document.querySelector(".hogwarts").style.display = "block";
+    } 
+     document.querySelector(".Vihod").onclick = function(){
+		document.querySelector(".hogwarts").style.display = "none";
+		document.querySelector(".okayok").style.display = "block";
+	}
+		document.querySelector('.Door2').onclick = function(){ 
+		alert("Cool unlimited summer");
+		document.querySelector(".okayok").style.display='none';   
+	    document.querySelector(".summer").style.display = "block";
+		
+	}  
+		document.querySelector(".Exit").onclick = function(){
+		document.querySelector(".summer").style.display = "none";
+		document.querySelector(".okayok").style.display = "block";
+	}
+		document.querySelector('.Door3').onclick = function(){
+		alert("NEIN");
+		
+	} 
+
+	document.querySelector('.Mantiya').onclick = function(){ 
+		scores = scores+1;
+		document.querySelector('.Mantiya').style.display = "none"; 
+		document.querySelector('.scores').innerHTML = scores; 
+	} 
+	document.querySelector('.Metla').onclick = function(){ 
+		scores = scores+1;
+		document.querySelector('.Metla').style.display = "none"; 
+		document.querySelector('.scores').innerHTML = scores; 
+	} 
+	document.querySelector('.Palochka').onclick = function(){ 
+		scores = scores+1;
+		document.querySelector('.Palochka').style.display = "none"; 
+		document.querySelector('.scores').innerHTML = scores; 
+	} 
+	document.querySelector('scores').onclick = function(){
+
+
+	}
+
+	
+
+</script>
+</html>
